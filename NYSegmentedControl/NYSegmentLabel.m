@@ -10,8 +10,8 @@
 #import "NYSegmentLabel.h"
 
 @interface NYSegmentLabel ()
-@property(nonatomic, strong) NSDictionary *normalAttributes;
-@property(nonatomic, strong) NSDictionary *alternativeAttributes;
+@property (nonatomic, strong) NSDictionary *normalAttributes;
+@property (nonatomic, strong) NSDictionary *alternativeAttributes;
 @end
 
 @implementation NYSegmentLabel
@@ -19,25 +19,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-		[self commonInit];
-    }
-
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-		[self commonInit];
-    }
-
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
-    if (self) {
-		[self commonInit];
+        [self commonInit];
     }
 
     return self;
