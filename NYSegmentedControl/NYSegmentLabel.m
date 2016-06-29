@@ -25,6 +25,15 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self commonInit];
+    }
+
+    return self;
+}
+
 - (void)commonInit {
     _alternativeTextColor = self.textColor;
     _alternativeFont = self.font;
